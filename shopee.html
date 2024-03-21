@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <style>
+        body{
+            background-color: orangered;
+        }
+        .item1{grid-area: main1;}
+        .item2{grid-area: side1;}
+        .item3{grid-area: side2;}
+        .item4{grid-area: footer1;}
+        .item5{grid-area: footer2;}
+        .item6{grid-area: footer3;}
+        .item7{grid-area: footer4;}
+        .item8{grid-area: footer5;}
+        .item9{grid-area: footer6;}
+        .item10{grid-area: footer7;}
+        .item11{grid-area: footer8;}
+        .item12{grid-area: footer9;}
+        .item13{grid-area: footer0;}
+        /* item */
+        .item1{
+            background-image: url("asset/shopeemain.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .item2{
+            background-image: url("asset/shoppeeside1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .item3{
+            background-image: url("asset/shoppeeside2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .item4{
+            background-image: url("asset/1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .item5{
+            background-image: url("asset/2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .item6{
+            background-image: url("asset/3.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .item7{
+            background-image: url("asset/4.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .item8{
+            background-image: url("asset/5.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .item9{
+            background-image: url("asset/6.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .item10{
+            background-image: url("asset/7.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .item11{
+            background-image: url("asset/8.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .item12{
+            background-image: url("asset/9.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .item13{
+            background-image: url("asset/0.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        /* homepage */
+        .homepage{
+            justify-content: center;
+            background-color: snow;
+            display: grid;
+            grid-template-columns: 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px;
+            grid-template-rows: 150px 150px 50px;
+            grid-template-areas: 
+            "main1 main1 main1 main1 main1 main1 main1 side1 side1 side1"
+            "main1 main1 main1 main1 main1 main1 main1 side2 side2 side2"
+            "footer1 footer2 footer3 footer4 footer5 footer6 footer7 footer8 footer9 footer0";
+            gap: 5px;
+        }
+        .homepage > div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* game */
+        .game a img{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+        }
+        /* header */
+        header{
+            position: sticky;
+            justify-content: space-between;
+            height: 119px;
+        }
+        /* navindex */
+        .navbar1{grid-area: nav1;}
+        .navbar2{grid-area: nav2;}
+        header .navindex{
+            display: grid;
+            height: 34px;
+            justify-content: space-between;
+            grid-template-areas: 
+            "nav1 . nav2";
+        }
+        .navbar1 ul li{
+            display: inline-block;
+            list-style: none;
+            color: snow;
+            margin-left: 20px;
+        }
+        .navbar2 ul li{
+            display: inline-block;
+            list-style: none;
+            color: snow;
+            margin-right: 50px;
+        }
+        /* search */
+        header .search{
+            display: flex;
+            justify-content: space-between;
+        }
+        header .search a.logo img{
+            width: 162px;
+            height: 85px;
+            margin-left: 50px;
+        }
+        header .search .searchtab{
+            display: flex;
+            align-items: center;
+        }
+        header .search .searchtab input[type="text"]{
+            height: 30px;
+            width: 754px;
+        }
+        header .search .searchtab input[type="submit"]{
+            height: 35px;
+            width: 70px;
+            justify-content: center;
+            font-size: 20px;
+        }
+        header .search img{
+            height: 85px;
+            margin-right: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navindex">
+            <div class="navbar1">
+                <ul>
+                    <li>Seller Centre</li>
+                    <li>Mulai Berjualan</li>
+                    <li>Download</li>
+                </ul>
+            </div>
+            <div class="navbar2">
+                <ul>
+                    <li>Notifikasi</li>
+                    <li>Bantuan</li>
+                    <li>Bahasa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="search">
+            <a href="https://shopee.co.id/" class="logo"><img src="asset/shopeelogo.jpg" alt="Shopee Logo"></a>
+            <div class="searchtab">
+                <input type="text" name="fr" id="" placeholder="Daftar & Dapat Voucher Gratis">
+                <input type="submit" value="🔍" >
+            </div>
+            <img src="asset/shoping.jpg" alt="Shoping Cart">
+        </div>
+    </header>
+    <div class="homepage">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="text">Shopee Pilihan Lokal</div>
+        <div class="item5"></div>
+        <div class="text">Shopee Mall</div>
+        <div class="item6"></div>
+        <div class="text">Pulsa, Tagihan, dan Tiket</div>
+        <div class="item7"></div>
+        <div class="text">inFashion</div>
+        <div class="item8"></div>
+        <div class="text">Shopee Supermarket</div>
+        <div class="item9"></div>
+        <div class="text">Bayar di Tempat</div>
+        <div class="item10"></div>
+        <div class="text">Termurah di Shopee</div>
+        <div class="item11"></div>
+        <div class="text">Gratis Ongkir dan Voucher</div>
+        <div class="item12"></div>
+        <div class="text">Shopee Barokah</div>
+        <div class="item13"></div>
+        <div class="text">Semua Promo</div>
+        <div class="game">
+            <a href="https://games.shopee.co.id/farm/"><img src="asset/game.gif" alt="Shopee Games"></a>
+        </div>
+    </div>
+</body>
+</html>
